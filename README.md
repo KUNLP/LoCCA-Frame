@@ -6,7 +6,7 @@ This project combines **MentalRoBERTa-based disorder classification** with **GPT
 
 ## Paper
 
-**Title**: LoCCA-Frame: Low-Cost Strategic Prompt Framework for Improving Mental Health Counseling Competence Based on Disorder Prediction  
+**Title**: LoCCA-Frame: A Low-Cost and Strategy-Guided Prompting Framework for Enhancing Diagnosis-Prediction Mental Health Counseling 
 (LoCCA-Frame: 질환 예측 기반 정신 건강 상담 역량 향상을 위한 저비용 전략 프롬프트 프레임워크)
 
 **Authors**: Kwangil Kim, Seulgi Kim, Harksoo Kim  
@@ -24,26 +24,13 @@ Generic LLMs often hallucinate or provide ungrounded advice in mental health con
 ```
 LoCCA-Frame/
 ├── src/
+|   |── eval/                       # Evaluation Metric
 │   ├── MentalRoBERTa_Training.py   # Fine-tuning script for classification
 │   ├── pipeline.py                 # Main inference pipeline
 │   └── Trained_MentalRoBERTa/      # Saved model checkpoints
 ├── data/
-│   ├── strategy_info.json          # Mapping of disorders to treatment strategies
-│   └── inference_sample.jsonl      # Sample input data
+│   ├── strategy_info.json          # Mapping of disorders to treatment 
 └── README.md
-```
-
-## Requirements
-
-  * Python 3.8+
-  * PyTorch
-  * Transformers
-  * OpenAI API
-
-Install dependencies:
-
-```bash
-pip install torch transformers scikit-learn scikit-multilearn pandas numpy tqdm openai attrdict
 ```
 
 ## Usage
