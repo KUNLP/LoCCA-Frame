@@ -2,8 +2,9 @@
 
 Official implementation of **LoCCA-Frame**, a mental health counseling framework presented at **KCC 2025**.
 
-This project combines **MentalRoBERTa-based disorder classification** with **GPT-4o response generation** to provide strategy-driven counseling.
+This project combines MentalRoBERTa-based disorder classification with GPT-4o response generation to provide strategy-driven counseling.
 
+![Overall Framework](LoCCA-Frame.png)
 ## Paper
 
 **Title**: LoCCA-Frame: A Low-Cost and Strategy-Guided Prompting Framework for Enhancing Diagnosis-Prediction Mental Health Counseling 
@@ -48,7 +49,7 @@ The model will be saved to `./src/Trained_MentalRoBERTa/best_model/`.
 Run the full pipeline (Classification + Strategy Retrieval + Generation).
 
 ```bash
-python src/pipeline.py --api_key YOUR_OPENAI_API_KEY --data_file ./data/your_data.jsonl
+python src/pipeline.py --data_file ./data/your_data.jsonl
 ```
 
 **Arguments:**
